@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- This file was auto-generated from WSDL --><!-- by the Apache Axis2 version: 1.6.2  Built on : Apr 17, 2012 (05:33:49 IST) --><serviceGroup>
+    <service name="LabCallbackService">
+        <messageReceivers>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-only" class="org.pahospital.www.labcallbackservice.LabCallbackServiceMessageReceiverInOnly"/>
+        </messageReceivers>
+        <parameter name="ServiceClass">org.pahospital.www.labcallbackservice.LabCallbackServiceSkeleton</parameter>
+        <parameter name="useOriginalwsdl">true</parameter>
+        <parameter name="modifyUserWSDLPortAddress">true</parameter>
+        <operation name="SendLabReport" mep="http://www.w3.org/ns/wsdl/in-only" namespace="http://www.PAHospital.org/LabCallbackService/">
+            <actionMapping>http://www.PAHospital.org/LabCallbackService/SendLabReport</actionMapping>
+        </operation>
+    </service>
+</serviceGroup>

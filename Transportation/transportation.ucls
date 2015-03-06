@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.1.8" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true">  
+  <class id="1" language="java" name="org.pahospital.www.transportationservice.ExtensionMapper" project="Transportation" 
+    file="/Transportation/src/org/pahospital/www/transportationservice/ExtensionMapper.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="99" width="289" x="165" y="-51"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="org.pahospital.www.transportationservice.SampleOrder.Factory" 
+    project="Transportation" file="/Transportation/src/org/pahospital/www/transportationservice/SampleOrder.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="218" x="1089" y="520"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="org.pahospital.www.transportationservice.Patient" project="Transportation" 
+    file="/Transportation/src/org/pahospital/www/transportationservice/Patient.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="315" width="207" x="622" y="520"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="org.pahospital.www.transportationservice.PatientOrder.Factory" 
+    project="Transportation" file="/Transportation/src/org/pahospital/www/transportationservice/PatientOrder.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="215" x="1471" y="520"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="org.pahospital.www.transportationservice.TransportationServiceSkeleton" 
+    project="Transportation" 
+    file="/Transportation/src/org/pahospital/www/transportationservice/TransportationServiceSkeleton.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="228" x="821" y="-51"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="org.pahospital.www.transportationservice.Sample" project="Transportation" 
+    file="/Transportation/src/org/pahospital/www/transportationservice/Sample.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="261" width="180" x="869" y="520"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="7" language="java" name="org.pahospital.www.transportationservice.SampleOrder" project="Transportation" 
+    file="/Transportation/src/org/pahospital/www/transportationservice/SampleOrder.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="477" width="342" x="1089" y="-51"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="8" language="java" 
+    name="org.pahospital.www.transportationservice.TransportationServiceMessageReceiverInOnly" project="Transportation" 
+    file="/Transportation/src/org/pahospital/www/transportationservice/TransportationServiceMessageReceiverInOnly.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="189" width="287" x="494" y="-51"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="9" language="java" name="org.pahospital.www.transportationservice.PatientOrder" project="Transportation" 
+    file="/Transportation/src/org/pahospital/www/transportationservice/PatientOrder.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="531" width="342" x="1471" y="-51"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <association id="10">    
+    <end type="SOURCE" refId="5" navigable="false">      
+      <attribute id="11" name="samples"/>      
+      <multiplicity id="12" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="13">    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="4"/>  
+  </nesting>  
+  <nesting id="14">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="2"/>  
+  </nesting>  
+  <association id="15">    
+    <end type="SOURCE" refId="5" navigable="false">      
+      <attribute id="16" name="patients"/>      
+      <multiplicity id="17" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="3" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

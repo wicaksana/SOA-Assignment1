@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="CarRental" targetNamespace="http://localhost/CarRental/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://localhost/CarRental/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://localhost/CarRental/">
+      <xsd:element name="getAvailability">
+        <xsd:complexType>
+          <xsd:sequence>
+          	<xsd:element name="pickupLocation" type="xsd:string"/>
+          	<xsd:element name="pickupDate" type="xsd:date"/>
+          	<xsd:element name="dropOffLocation" type="xsd:string"/>
+          	<xsd:element name="dropOffDate" type="xsd:date"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="getAvailabilityResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="carCode" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="rentCar">
+      	<xsd:complexType>
+      		<xsd:sequence>
+
+      			<xsd:element name="carCode" type="xsd:string"/>
+      			<xsd:element name="pickupLocation" type="xsd:string">
+      			</xsd:element>
+      			<xsd:element name="pickupDate" type="xsd:date"/>
+      			<xsd:element name="dropOffLocation" type="xsd:string">
+      			</xsd:element>
+      			<xsd:element name="dropOffDate" type="xsd:date"/>
+      		</xsd:sequence>
+      	</xsd:complexType>
+      </xsd:element>
+      <xsd:element name="rentCarResponse">
+      	<xsd:complexType>
+      		<xsd:sequence>
+
+      			<xsd:element name="confirmation" type="xsd:string"/>
+      		</xsd:sequence>
+      	</xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="rentCarResponse">
+    <wsdl:part name="parameters" element="tns:rentCarResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="rentCarRequest">
+    <wsdl:part name="parameters" element="tns:rentCar">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getAvailabilityResponse">
+    <wsdl:part name="parameters" element="tns:getAvailabilityResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getAvailabilityRequest">
+    <wsdl:part name="parameters" element="tns:getAvailability">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="CarRentalPortType">
+    <wsdl:operation name="getAvailability">
+      <wsdl:input message="tns:getAvailabilityRequest">
+    </wsdl:input>
+      <wsdl:output message="tns:getAvailabilityResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="rentCar">
+      <wsdl:input message="tns:rentCarRequest">
+    </wsdl:input>
+      <wsdl:output message="tns:rentCarResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CarRentalBinding" type="tns:CarRentalPortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="getAvailability">
+      <soap:operation soapAction="http://localhost/CarRental/getAvailability"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="rentCar">
+      <soap:operation soapAction="http://localhost/CarRental/rentCar"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CarRentalService">
+    <wsdl:port name="CarHirePort" binding="tns:CarRentalBinding">
+      <soap:address location="http://localhost/CarRental"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
